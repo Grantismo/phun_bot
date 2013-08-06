@@ -50,7 +50,7 @@ def main
   while true do
     email = idle_until_email(imap)
     puts "From: #{email.from.first}"
-    puts email.text
+    puts email.text_part
     #puts email.text_part.decoded
   end
   
