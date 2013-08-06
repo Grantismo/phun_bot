@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
 require 'highline/import'
 require 'mail'
 require 'net/imap'
