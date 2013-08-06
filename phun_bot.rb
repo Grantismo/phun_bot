@@ -47,7 +47,8 @@ def main
   while true do
     email = idle_until_email(imap)
     puts "From: #{email.from.first}"
-    puts email.text_part.decoded
+    puts email.text
+    #puts email.text_part.decoded
   end
   
   imap.logout
